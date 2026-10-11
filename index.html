@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kite Compare サポート</title>
+<meta name="description" content="Kite Compare のプライバシーポリシーとサポート窓口。">
+<style>
+  :root {
+    --bg: #f4fafb; --surface: #ffffff; --text: #10252b; --muted: #55707a;
+    --accent: #0e8a98; --line: #dbe8eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0b171b; --surface: #12232a; --text: #e8f4f6; --muted: #93b0b8;
+      --accent: #3cc6d4; --line: #1f3740;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0b171b; --surface: #12232a; --text: #e8f4f6; --muted: #93b0b8;
+    --accent: #3cc6d4; --line: #1f3740;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 48px 0 8px; }
+  header h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  header p { margin: 0; color: var(--muted); }
+  nav { display: flex; gap: 16px; flex-wrap: wrap; margin: 20px 0 0; }
+  a { color: var(--accent); }
+  section { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 8px 22px 20px; margin: 24px 0; }
+  h2 { font-size: 1.35rem; margin: 18px 0 8px; }
+  h3 { font-size: 1.05rem; margin: 22px 0 4px; }
+  p, li { overflow-wrap: anywhere; }
+  .meta { color: var(--muted); font-size: .9rem; }
+  footer { padding: 24px 0 48px; color: var(--muted); font-size: .85rem; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Kite Compare</h1>
+    <p>カイトボードのトリック動画を2画面で並べて比べる iPhone / iPad アプリ</p>
+    <nav><a href="#support">サポート</a><a href="#privacy">プライバシーポリシー</a></nav>
+  </header>
+
+  <section id="support">
+    <h2>サポート</h2>
+    <p>不具合の報告、ご質問、ご意見は、GitHub Issues からお知らせください。</p>
+    <p><a href="https://github.com/ippoutsukou/kitecompare-legal/issues">https://github.com/ippoutsukou/kitecompare-legal/issues</a></p>
+    <p>報告の際は、端末の機種、iOS / iPadOS のバージョン、アプリのバージョン、操作の手順と起きたことを書いていただけると助かります。Issues は公開されるため、個人情報や動画そのものは投稿しないでください。</p>
+    <p class="meta">個人開発のため、すべてのご連絡への返信や対応を保証するものではありません。</p>
+
+    <h3>よくある質問</h3>
+    <p><strong>動画が表示されない</strong><br>
+    iOS の「設定」→「Kite Compare」→「写真」でアクセスを許可してください。限定アクセスの場合は、対象の動画を選択済みにしてください。iCloud 写真で端末に保存されていない動画は、写真アプリで一度開いてダウンロードしてから使ってください。</p>
+    <p><strong>購入した機能を別の端末でも使いたい</strong><br>
+    同じ Apple Account でサインインし、比較動画の書き出し画面の「購入を復元」を使ってください。</p>
+    <p><strong>アプリ内の登録を削除すると元の動画も消える？</strong><br>
+    消えません。写真ライブラリの原本はそのまま残ります。</p>
+  </section>
+
+  <section id="privacy">
+    <h2>プライバシーポリシー</h2>
+    <p class="meta">最終更新: 2026-10-11</p>
+    <p>「Kite Compare」（以下「本アプリ」）は、カイトボードのトリック動画を端末内で整理し、2本を並べて比較するアプリです。開発・運営は個人開発者（GitHub: ippoutsukou）が行っています。</p>
+
+    <h3>収集する情報</h3>
+    <p>本アプリは、個人情報、利用状況、端末識別子、位置情報、連絡先、写真・動画その他のデータを、開発者または第三者へ送信・収集しません。広告、アクセス解析、クラッシュレポート、アカウント登録、クラウド同期は使用しません。</p>
+
+    <h3>写真ライブラリの利用</h3>
+    <p>本アプリは、利用者が選択した動画を再生・比較するために写真ライブラリへのアクセスを使います。登録時に保存するのは写真ライブラリ内の動画を指す参照（識別子）であり、動画を複製したり外部へ送信したりしません。限定アクセスにも対応しています。</p>
+    <p>比較動画を作成した場合、利用者の操作に応じて写真ライブラリへ保存します。</p>
+
+    <h3>端末内に保存する情報</h3>
+    <p>トリックの分類、メモ、動画の開始位置、写真ライブラリの参照などの登録情報は、利用者の端末内にのみ保存されます。比較動画の作成処理は端末内で行い、作成中に生成する一時ファイルも端末内に置かれます。</p>
+
+    <h3>共有</h3>
+    <p>作成した比較動画は、利用者が操作した場合に限り、端末の共有機能で利用者が選んだアプリやサービスへ渡されます。共有先での取り扱いには、そのサービスの規約・プライバシーポリシーが適用されます。本アプリおよび開発者は共有先を取得・管理しません。</p>
+
+    <h3>アプリ内課金</h3>
+    <p>本アプリは、比較動画の書き出し機能を解放する買い切りのアプリ内課金を提供します。商品の表示、購入、購入履歴の復元は Apple の StoreKit と App Store が処理します。開発者が決済情報や Apple Account の情報を収集・保存することはありません。Apple による情報の取り扱いには、Apple のプライバシーポリシーが適用されます。</p>
+
+    <h3>データの削除</h3>
+    <p>アプリ内で登録を削除すると、その登録情報は端末から削除されます。写真ライブラリの原本は削除されません。アプリを削除すると、端末内の登録情報もあわせて削除されます。</p>
+
+    <h3>第三者提供</h3>
+    <p>本アプリは、利用者のデータを第三者へ販売、共有、提供しません。</p>
+
+    <h3>子どものプライバシー</h3>
+    <p>本アプリは年齢を問わず、個人情報を収集しません。</p>
+
+    <h3>変更</h3>
+    <p>本ポリシーを変更する場合は、このページの最終更新日を更新します。データの取り扱いを変更する場合は、App Store 上のプライバシー情報もあわせて更新します。</p>
+
+    <h3>お問い合わせ先</h3>
+    <p>本ポリシーに関するお問い合わせは、<a href="#support">サポート</a>に記載の GitHub Issues からお知らせください。</p>
+  </section>
+
+  <footer>© 2026 Kite Compare</footer>
+</div>
+</body>
+</html>
